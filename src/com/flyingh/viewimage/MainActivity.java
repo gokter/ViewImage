@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private static final String TAG = "MainActivity";
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
 			InputStream is = new URL(editText.getText().toString()).openStream();
 			imageView.setImageBitmap(BitmapFactory.decodeStream(is));
 		} catch (Exception e) {
+			Toast.makeText(getApplicationContext(), R.string.error_msg, Toast.LENGTH_LONG).show();
 			Log.i(TAG, e.toString());
 		}
 	}

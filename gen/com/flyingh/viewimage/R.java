@@ -29,6 +29,7 @@ public final class R {
         public static final int app_name=0x7f040000;
         public static final int default_image_site=0x7f040004;
         public static final int enter_site=0x7f040003;
+        public static final int error_msg=0x7f040007;
         public static final int hello_world=0x7f040001;
         public static final int image_description=0x7f040006;
         public static final int menu_settings=0x7f040002;
